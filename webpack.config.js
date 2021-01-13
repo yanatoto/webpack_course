@@ -19,6 +19,14 @@ module.exports = {
             template: './index.html'
         }),
         new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader','css-loader']
+            }
+        ]
+    }
     
 }
