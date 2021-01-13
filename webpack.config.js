@@ -14,7 +14,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Webpack Yana'
+            template: './src/index.html'
         })
     ]
     
